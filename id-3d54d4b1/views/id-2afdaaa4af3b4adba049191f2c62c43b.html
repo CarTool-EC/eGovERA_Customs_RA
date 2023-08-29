@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>OV-Customs Functional Architecture Principles</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>OV-Customs Functional Architecture Principles</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-2afdaaa4af3b4adba049191f2c62c43b.png" alt="OV-Customs Functional Architecture Principles" usemap="#id-2afdaaa4af3b4adba049191f2c62c43bmap"/>
+			   <map name="id-2afdaaa4af3b4adba049191f2c62c43bmap">
+				  				<area shape="rect" coords="670,605,870,685" href="../elements/id-486c96dfe9f6491da8af0b21dd2bfc02.html"  target="element">
+				  				<area shape="rect" coords="457,605,657,685" href="../elements/id-c9ecf0ee757a4996aae19eaa0e244a03.html"  target="element">
+				  				<area shape="rect" coords="243,605,443,685" href="../elements/id-67cdc8cd31a14912a38f1631967d2329.html"  target="element">
+				  				<area shape="rect" coords="34,607,234,687" href="../elements/id-0396b2ad527e42859467f9f1fe3fb450.html"  target="element">
+				  				<area shape="rect" coords="898,557,1098,637" href="../elements/id-9b4c08eb72cd4ba2ac5b21bd327c8295.html"  target="element">
+				  				<area shape="rect" coords="670,511,870,591" href="../elements/id-e91a0ac9d844442a9f963e3fb67137c7.html"  target="element">
+				  				<area shape="rect" coords="457,511,657,591" href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html"  target="element">
+				  				<area shape="rect" coords="243,511,443,591" href="../elements/id-8d70e48c3f164ba3bf3b37087521a13e.html"  target="element">
+				  				<area shape="rect" coords="34,511,234,591" href="../elements/id-b8fa304605fc4f04938402fb5db4f0b2.html"  target="element">
+				  				<area shape="rect" coords="898,463,1098,543" href="../elements/id-6865071ff14e4f1a95938d8548801c98.html"  target="element">
+				  				<area shape="rect" coords="670,413,870,493" href="../elements/id-23068f654a064b51a39e4a97120ccf1d.html"  target="element">
+				  				<area shape="rect" coords="457,411,657,491" href="../elements/id-da9a1b04d3bf44ed84052b5bc9dc1397.html"  target="element">
+				  				<area shape="rect" coords="243,411,443,491" href="../elements/id-245b1f8bbaf343a09ad6f8d1ccb5975f.html"  target="element">
+				  				<area shape="rect" coords="34,411,234,491" href="../elements/id-c5a3ed2428564c609489e1b10610cae9.html"  target="element">
+				  				<area shape="rect" coords="898,365,1098,445" href="../elements/id-0f676605dccb453ea7f52afbcaaf0ebf.html"  target="element">
+				  				<area shape="rect" coords="670,317,870,397" href="../elements/id-e9fd289634814f3ba097f77c5234d5cd.html"  target="element">
+				  				<area shape="rect" coords="457,317,657,397" href="../elements/id-a040b0b2f74b4d54bf439baf221418c2.html"  target="element">
+				  				<area shape="rect" coords="243,317,443,397" href="../elements/id-ba24daac00c246eaad6a9e9caaeac96e.html"  target="element">
+				  				<area shape="rect" coords="34,317,234,397" href="../elements/id-1812edebda0b46c18c7013af1a0fa0d6.html"  target="element">
+				  				<area shape="rect" coords="898,269,1098,349" href="../elements/id-504fc48327fd46b5b4090b682fa82845.html"  target="element">
+				  				<area shape="rect" coords="670,220,870,300" href="../elements/id-58359e31c8eb4b9cb20e7543bb20471d.html"  target="element">
+				  				<area shape="rect" coords="457,220,657,300" href="../elements/id-7c79f5f5f81045838a943d5d9efcfc13.html"  target="element">
+				  				<area shape="rect" coords="243,220,443,300" href="../elements/id-9c4205d6138743c1a014111e1d9a8517.html"  target="element">
+				  				<area shape="rect" coords="34,220,234,300" href="../elements/id-025c7c5656b648549482b90ff883d04c.html"  target="element">
+				  				<area shape="rect" coords="898,175,1098,255" href="../elements/id-bf604b74bb5148d3939f3b19dd1cfb2c.html"  target="element">
+				  				<area shape="rect" coords="670,125,870,205" href="../elements/id-db170076bbe147348f0c4f145d2edeb3.html"  target="element">
+				  				<area shape="rect" coords="457,125,657,205" href="../elements/id-0c0752d65cc5492d8e1836938b56f764.html"  target="element">
+				  				<area shape="rect" coords="243,125,443,205" href="../elements/id-96bfffdadeb946efa83580de0c306d57.html"  target="element">
+				  				<area shape="rect" coords="34,125,234,205" href="../elements/id-f76624b4b48944089597e91008551a98.html"  target="element">
+
+				  		<area shape="rect" coords="10,103,1126,720" href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html"  target="element">
+				  				<area shape="rect" coords="2914,655,3114,735" href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html"  target="element">
+				  				<area shape="rect" coords="2698,655,2898,735" href="../elements/id-a9cd369adf29473e89b049446cb41123.html"  target="element">
+				  				<area shape="rect" coords="2482,655,2682,735" href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html"  target="element">
+				  				<area shape="rect" coords="2266,655,2466,735" href="../elements/id-79d7b128bb2f43e1b7d0c8602eea04cb.html"  target="element">
+				  				<area shape="rect" coords="3130,559,3330,639" href="../elements/id-60e73edb1cf64ca1bea612e1de462467.html"  target="element">
+				  				<area shape="rect" coords="2914,559,3114,639" href="../elements/id-70f860513579401580c4a263c7359668.html"  target="element">
+				  				<area shape="rect" coords="2698,559,2898,639" href="../elements/id-d3626fbebfd2422eb477d9ea2a92072c.html"  target="element">
+				  				<area shape="rect" coords="2482,559,2682,639" href="../elements/id-63b5b9709fc74770b77cdae978d1448b.html"  target="element">
+				  				<area shape="rect" coords="2266,559,2466,639" href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html"  target="element">
+				  				<area shape="rect" coords="3130,463,3330,543" href="../elements/id-5eebd66019fd47e7977f8a3c03b868eb.html"  target="element">
+				  				<area shape="rect" coords="2914,463,3114,543" href="../elements/id-52d12e6242514ab38d35b918f49b55ab.html"  target="element">
+				  				<area shape="rect" coords="2698,463,2898,543" href="../elements/id-d2951b2ed4154da98391d21d98a2ebd8.html"  target="element">
+				  				<area shape="rect" coords="2482,463,2682,543" href="../elements/id-3dbc0ee3241f4879a2ac86981b1aecf4.html"  target="element">
+				  				<area shape="rect" coords="2266,463,2466,543" href="../elements/id-70d147abd538471181e6d88642c24fa2.html"  target="element">
+				  				<area shape="rect" coords="3130,367,3330,447" href="../elements/id-815fc5f7cff041d9b84be871d53ab19f.html"  target="element">
+				  				<area shape="rect" coords="2914,367,3114,447" href="../elements/id-82d0929053b9470b9620a87cf8487d85.html"  target="element">
+				  				<area shape="rect" coords="2698,367,2898,447" href="../elements/id-3d0bc5781d9343f4b9bc73a36eb5d8ed.html"  target="element">
+				  				<area shape="rect" coords="2482,367,2682,447" href="../elements/id-0c7f1564065343b08792b7954cf40a27.html"  target="element">
+				  				<area shape="rect" coords="2266,367,2466,447" href="../elements/id-07a2d9841a4c435490bfd0a5d1d8e862.html"  target="element">
+
+				  		<area shape="rect" coords="2230,307,3346,780" href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html"  target="element">
+				  		<area shape="rect" coords="1642,1027,1892,1102" href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html"  target="element">
+				  		<area shape="rect" coords="1642,919,1892,994" href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html"  target="element">
+				  		<area shape="rect" coords="1642,823,1892,898" href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html"  target="element">
+				  		<area shape="rect" coords="1642,607,1892,682" href="../elements/id-f0fbf17b614648e6a9b60570729d0ae9.html"  target="element">
+				  		<area shape="rect" coords="1642,715,1892,790" href="../elements/id-5774bce6313d41ebb754f03e62534b93.html"  target="element">
+				  		<area shape="rect" coords="1642,487,1892,562" href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html"  target="element">
+				  		<area shape="rect" coords="1642,391,1892,466" href="../elements/id-f6157270140640c98017ff52e7c1588d.html"  target="element">
+				  		<area shape="rect" coords="1642,295,1892,370" href="../elements/id-b15fd58b4ef047cb91b62ded14088c2a.html"  target="element">
+				  		<area shape="rect" coords="1642,103,1892,178" href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html"  target="element">
+				  		<area shape="rect" coords="1642,10,1892,85" href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html"  target="element">
+				  		<area shape="rect" coords="1642,199,1892,274" href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">The Organizational-Functional Architecture Principles view is a crucial aspect of solutions architecture, as it directly influences the implementation of solutions within an organization's functional layers. This view focuses on aligning the design and implementation of solutions with the goals, requirements, and processes of the organization.
+
+Aligning the Organizational-Functional Architecture Principles view with the organizational building blocks brings several benefits. Firstly, it ensures consistency and coherence across different functional areas within the organization. By defining and adhering to architecture principles, solutions architects establish a standardized approach that allows for seamless integration and interoperability between various building blocks. This consistency fosters effective communication and collaboration among departments and teams, promoting efficient business processes and operations.
+
+Secondly, aligning the Organizational-Functional Architecture Principles view supports the scalability and adaptability of solutions. The architecture principles provide guidelines for designing modular, flexible, and reusable solutions. By considering the specific requirements and characteristics of each organizational building block, solutions architects can design solutions that can easily accommodate future changes and expansions. This scalability and adaptability enable the organization to respond to evolving business needs, reducing the time and resources required for future modifications.
+
+Furthermore, aligning the Organizational-Functional Architecture Principles view enhances governance and decision-making processes within the organization. The architecture principles serve as a reference for making design decisions, ensuring that solutions align with the strategic objectives and priorities of the organization. By considering the unique characteristics and requirements of each building block, solutions architects can make informed choices that optimize resource utilization and support the overall organizational strategy.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html" target="element"> Digital First </a> </td>
+											    <td> <a href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element"> Openness </a> </td>
+											    <td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html" target="element"> Security by Design </a> </td>
+											    <td> <a href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-b15fd58b4ef047cb91b62ded14088c2a.html" target="element"> Service Orientation </a> </td>
+											    <td> <a href="../elements/id-b15fd58b4ef047cb91b62ded14088c2a.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-f6157270140640c98017ff52e7c1588d.html" target="element"> User-centricity </a> </td>
+											    <td> <a href="../elements/id-f6157270140640c98017ff52e7c1588d.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html" target="element"> Once Only </a> </td>
+											    <td> <a href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-5774bce6313d41ebb754f03e62534b93.html" target="element"> Multilingualism </a> </td>
+											    <td> <a href="../elements/id-5774bce6313d41ebb754f03e62534b93.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-f0fbf17b614648e6a9b60570729d0ae9.html" target="element"> Evidence based Public Policy </a> </td>
+											    <td> <a href="../elements/id-f0fbf17b614648e6a9b60570729d0ae9.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element"> Openness </a> </td>
+											    <td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html" target="element"> Privacy </a> </td>
+											    <td> <a href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html" target="element"> Preservation of information </a> </td>
+											    <td> <a href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+											    <td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-07a2d9841a4c435490bfd0a5d1d8e862.html" target="element"> Economic Operators Registration and Identification number (EORI) </a> </td>
+													    <td> <a href="../elements/id-07a2d9841a4c435490bfd0a5d1d8e862.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-0c7f1564065343b08792b7954cf40a27.html" target="element"> Free circulation requirement information </a> </td>
+													    <td> <a href="../elements/id-0c7f1564065343b08792b7954cf40a27.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3d0bc5781d9343f4b9bc73a36eb5d8ed.html" target="element"> Laboratories information </a> </td>
+													    <td> <a href="../elements/id-3d0bc5781d9343f4b9bc73a36eb5d8ed.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-82d0929053b9470b9620a87cf8487d85.html" target="element"> Threads and fraudulent actions Information </a> </td>
+													    <td> <a href="../elements/id-82d0929053b9470b9620a87cf8487d85.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-815fc5f7cff041d9b84be871d53ab19f.html" target="element"> Duties calculation Information </a> </td>
+													    <td> <a href="../elements/id-815fc5f7cff041d9b84be871d53ab19f.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element"> Imports information </a> </td>
+													    <td> <a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3dbc0ee3241f4879a2ac86981b1aecf4.html" target="element"> Combined nomenclature </a> </td>
+													    <td> <a href="../elements/id-3dbc0ee3241f4879a2ac86981b1aecf4.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d2951b2ed4154da98391d21d98a2ebd8.html" target="element"> Workforce information </a> </td>
+													    <td> <a href="../elements/id-d2951b2ed4154da98391d21d98a2ebd8.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-52d12e6242514ab38d35b918f49b55ab.html" target="element"> Classification of goods Information </a> </td>
+													    <td> <a href="../elements/id-52d12e6242514ab38d35b918f49b55ab.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-5eebd66019fd47e7977f8a3c03b868eb.html" target="element"> Temporary storage Information </a> </td>
+													    <td> <a href="../elements/id-5eebd66019fd47e7977f8a3c03b868eb.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element"> Exports information </a> </td>
+													    <td> <a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-63b5b9709fc74770b77cdae978d1448b.html" target="element"> Special Procedures Information </a> </td>
+													    <td> <a href="../elements/id-63b5b9709fc74770b77cdae978d1448b.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d3626fbebfd2422eb477d9ea2a92072c.html" target="element"> Binding Tariffs Information </a> </td>
+													    <td> <a href="../elements/id-d3626fbebfd2422eb477d9ea2a92072c.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-70f860513579401580c4a263c7359668.html" target="element"> Guarantee Information </a> </td>
+													    <td> <a href="../elements/id-70f860513579401580c4a263c7359668.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-60e73edb1cf64ca1bea612e1de462467.html" target="element"> Economic Operators Information </a> </td>
+													    <td> <a href="../elements/id-60e73edb1cf64ca1bea612e1de462467.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-79d7b128bb2f43e1b7d0c8602eea04cb.html" target="element"> Customs partners Information </a> </td>
+													    <td> <a href="../elements/id-79d7b128bb2f43e1b7d0c8602eea04cb.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element"> Economic value Information </a> </td>
+													    <td> <a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-a9cd369adf29473e89b049446cb41123.html" target="element"> Internal logistic Information </a> </td>
+													    <td> <a href="../elements/id-a9cd369adf29473e89b049446cb41123.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element"> Origin of goods Information </a> </td>
+													    <td> <a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+											    <td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-f76624b4b48944089597e91008551a98.html" target="element"> Economic Operators Registry management </a> </td>
+													    <td> <a href="../elements/id-f76624b4b48944089597e91008551a98.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-96bfffdadeb946efa83580de0c306d57.html" target="element"> EU Customs Trader Portal </a> </td>
+													    <td> <a href="../elements/id-96bfffdadeb946efa83580de0c306d57.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-0c0752d65cc5492d8e1836938b56f764.html" target="element"> Analysis Management </a> </td>
+													    <td> <a href="../elements/id-0c0752d65cc5492d8e1836938b56f764.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-db170076bbe147348f0c4f145d2edeb3.html" target="element"> Internal Customs logistics management </a> </td>
+													    <td> <a href="../elements/id-db170076bbe147348f0c4f145d2edeb3.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-bf604b74bb5148d3939f3b19dd1cfb2c.html" target="element"> Centralised Clearance for Import </a> </td>
+													    <td> <a href="../elements/id-bf604b74bb5148d3939f3b19dd1cfb2c.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-025c7c5656b648549482b90ff883d04c.html" target="element"> Determination of the economic value of goods declared for importation </a> </td>
+													    <td> <a href="../elements/id-025c7c5656b648549482b90ff883d04c.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-9c4205d6138743c1a014111e1d9a8517.html" target="element"> Tariff Registry management </a> </td>
+													    <td> <a href="../elements/id-9c4205d6138743c1a014111e1d9a8517.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-7c79f5f5f81045838a943d5d9efcfc13.html" target="element"> Applications and Requests </a> </td>
+													    <td> <a href="../elements/id-7c79f5f5f81045838a943d5d9efcfc13.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-58359e31c8eb4b9cb20e7543bb20471d.html" target="element"> Compliance verification management </a> </td>
+													    <td> <a href="../elements/id-58359e31c8eb4b9cb20e7543bb20471d.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-504fc48327fd46b5b4090b682fa82845.html" target="element"> Duties guarantee management </a> </td>
+													    <td> <a href="../elements/id-504fc48327fd46b5b4090b682fa82845.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-1812edebda0b46c18c7013af1a0fa0d6.html" target="element"> Origin Registry management </a> </td>
+													    <td> <a href="../elements/id-1812edebda0b46c18c7013af1a0fa0d6.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-ba24daac00c246eaad6a9e9caaeac96e.html" target="element"> Customs Decisions system </a> </td>
+													    <td> <a href="../elements/id-ba24daac00c246eaad6a9e9caaeac96e.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-a040b0b2f74b4d54bf439baf221418c2.html" target="element"> Customs organizational structure management </a> </td>
+													    <td> <a href="../elements/id-a040b0b2f74b4d54bf439baf221418c2.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-e9fd289634814f3ba097f77c5234d5cd.html" target="element"> Duties calculation and payment </a> </td>
+													    <td> <a href="../elements/id-e9fd289634814f3ba097f77c5234d5cd.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-0f676605dccb453ea7f52afbcaaf0ebf.html" target="element"> Partner authorization </a> </td>
+													    <td> <a href="../elements/id-0f676605dccb453ea7f52afbcaaf0ebf.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-c5a3ed2428564c609489e1b10610cae9.html" target="element"> Customs declarations </a> </td>
+													    <td> <a href="../elements/id-c5a3ed2428564c609489e1b10610cae9.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-245b1f8bbaf343a09ad6f8d1ccb5975f.html" target="element"> Procedure Automation System </a> </td>
+													    <td> <a href="../elements/id-245b1f8bbaf343a09ad6f8d1ccb5975f.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-da9a1b04d3bf44ed84052b5bc9dc1397.html" target="element"> Preservation of cargo control </a> </td>
+													    <td> <a href="../elements/id-da9a1b04d3bf44ed84052b5bc9dc1397.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-23068f654a064b51a39e4a97120ccf1d.html" target="element"> Intra-EU purchases and sales </a> </td>
+													    <td> <a href="../elements/id-23068f654a064b51a39e4a97120ccf1d.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-6865071ff14e4f1a95938d8548801c98.html" target="element"> Notification of Arrival, Presentation Notification and Temporary Storage </a> </td>
+													    <td> <a href="../elements/id-6865071ff14e4f1a95938d8548801c98.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-b8fa304605fc4f04938402fb5db4f0b2.html" target="element"> Classification of goods </a> </td>
+													    <td> <a href="../elements/id-b8fa304605fc4f04938402fb5db4f0b2.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-8d70e48c3f164ba3bf3b37087521a13e.html" target="element"> Procedures registry management </a> </td>
+													    <td> <a href="../elements/id-8d70e48c3f164ba3bf3b37087521a13e.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions </a> </td>
+													    <td> <a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-e91a0ac9d844442a9f963e3fb67137c7.html" target="element"> Computerised Transit </a> </td>
+													    <td> <a href="../elements/id-e91a0ac9d844442a9f963e3fb67137c7.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-9b4c08eb72cd4ba2ac5b21bd327c8295.html" target="element"> Risk analysis </a> </td>
+													    <td> <a href="../elements/id-9b4c08eb72cd4ba2ac5b21bd327c8295.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-0396b2ad527e42859467f9f1fe3fb450.html" target="element"> Laboratories registry management </a> </td>
+													    <td> <a href="../elements/id-0396b2ad527e42859467f9f1fe3fb450.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-67cdc8cd31a14912a38f1631967d2329.html" target="element"> EU Customs information exchange </a> </td>
+													    <td> <a href="../elements/id-67cdc8cd31a14912a38f1631967d2329.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-c9ecf0ee757a4996aae19eaa0e244a03.html" target="element"> Goods flow analysis and simulations </a> </td>
+													    <td> <a href="../elements/id-c9ecf0ee757a4996aae19eaa0e244a03.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-486c96dfe9f6491da8af0b21dd2bfc02.html" target="element"> Economic Operator management and accreditation </a> </td>
+													    <td> <a href="../elements/id-486c96dfe9f6491da8af0b21dd2bfc02.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-6e41ed1bb2a5480da43151851a99d936.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6e41ed1bb2a5480da43151851a99d936.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html" target="element"> Digital First </a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-299e2d0472bd438590a6d5fbae094df0.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-299e2d0472bd438590a6d5fbae094df0.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html" target="element"> Security by Design </a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-50e8f319220e43f78ce89f7de0ebceee.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-50e8f319220e43f78ce89f7de0ebceee.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-b15fd58b4ef047cb91b62ded14088c2a.html" target="element"> Service Orientation </a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-7fee9646fd774183b9ca98719b4d8f0d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7fee9646fd774183b9ca98719b4d8f0d.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-f6157270140640c98017ff52e7c1588d.html" target="element"> User-centricity </a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-dacd567c549d47309718b2aa2206c5d1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-dacd567c549d47309718b2aa2206c5d1.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html" target="element"> Once Only </a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-5c62b2ad16124aa884f6c95ac96ce819.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5c62b2ad16124aa884f6c95ac96ce819.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-5774bce6313d41ebb754f03e62534b93.html" target="element"> Multilingualism </a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-36c6c6346eec4adf94871976286a3d4c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-36c6c6346eec4adf94871976286a3d4c.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-f0fbf17b614648e6a9b60570729d0ae9.html" target="element"> Evidence based Public Policy </a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-93dc1f8bec1847a18ec9eb1d427728cb.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-93dc1f8bec1847a18ec9eb1d427728cb.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element"> Openness </a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-96167606bfa946a0aa38bc2b8c94fe7a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-96167606bfa946a0aa38bc2b8c94fe7a.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element"> Openness </a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-94b6be6ba9e245bda11c567b80dc27f1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-94b6be6ba9e245bda11c567b80dc27f1.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html" target="element"> Privacy </a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-448afe20eb3e46ef9bffa3c574007197.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-448afe20eb3e46ef9bffa3c574007197.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html" target="element"> Preservation of information </a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-f2d22366e85c4fdcaa9bcce329e433e2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f2d22366e85c4fdcaa9bcce329e433e2.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-0c7f1564065343b08792b7954cf40a27.html" target="element"> Free circulation requirement information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-b7c8a6b3786043c1a7488d69986dfc08.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b7c8a6b3786043c1a7488d69986dfc08.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-60e73edb1cf64ca1bea612e1de462467.html" target="element"> Economic Operators Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e5351a12546e43b68b52e64f64e97a17.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e5351a12546e43b68b52e64f64e97a17.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element"> Imports information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0234b8942fe243968ac69c7f3c2149b1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0234b8942fe243968ac69c7f3c2149b1.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-63b5b9709fc74770b77cdae978d1448b.html" target="element"> Special Procedures Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0389624b273840dfa5659810153f46eb.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0389624b273840dfa5659810153f46eb.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-07a2d9841a4c435490bfd0a5d1d8e862.html" target="element"> Economic Operators Registration and Identification number (EORI) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-ab7c0d98416345ca8b1ff1e11fef4270.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-ab7c0d98416345ca8b1ff1e11fef4270.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-70f860513579401580c4a263c7359668.html" target="element"> Guarantee Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-89b30f7ad7e94caa8efe8d02c88b1f73.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-89b30f7ad7e94caa8efe8d02c88b1f73.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-815fc5f7cff041d9b84be871d53ab19f.html" target="element"> Duties calculation Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-5408c69bd90943dab4431f4613b2890a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5408c69bd90943dab4431f4613b2890a.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-3dbc0ee3241f4879a2ac86981b1aecf4.html" target="element"> Combined nomenclature </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e43959fdfe934ba39a4f161ce2ce2f98.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e43959fdfe934ba39a4f161ce2ce2f98.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-3d0bc5781d9343f4b9bc73a36eb5d8ed.html" target="element"> Laboratories information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-5e14870b59b64ec8b95a7005df337c1d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5e14870b59b64ec8b95a7005df337c1d.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-52d12e6242514ab38d35b918f49b55ab.html" target="element"> Classification of goods Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-6d1d6a086d134de497bae4389073e654.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6d1d6a086d134de497bae4389073e654.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-d3626fbebfd2422eb477d9ea2a92072c.html" target="element"> Binding Tariffs Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-1fcfd6e89b8243a1b566352d791f2cb1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-1fcfd6e89b8243a1b566352d791f2cb1.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element"> Origin of goods Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-a1dcfae7b9124f3ca7a407530b6fc074.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a1dcfae7b9124f3ca7a407530b6fc074.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element"> Economic value Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-44a51060723d423787e052f8c8eba063.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-44a51060723d423787e052f8c8eba063.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-d2951b2ed4154da98391d21d98a2ebd8.html" target="element"> Workforce information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-ed5c97fe02e34de993451831a3be2c3e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-ed5c97fe02e34de993451831a3be2c3e.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-a9cd369adf29473e89b049446cb41123.html" target="element"> Internal logistic Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e0d55807adfb4c39ad77bbeb66cdfa1a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e0d55807adfb4c39ad77bbeb66cdfa1a.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-79d7b128bb2f43e1b7d0c8602eea04cb.html" target="element"> Customs partners Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-3327c8111d294210be23177987624020.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-3327c8111d294210be23177987624020.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-5eebd66019fd47e7977f8a3c03b868eb.html" target="element"> Temporary storage Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-d814a56817284581900e084b572b8874.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d814a56817284581900e084b572b8874.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-82d0929053b9470b9620a87cf8487d85.html" target="element"> Threads and fraudulent actions Information </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-ce1bd74b863f445085785a03ded3bcfd.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-ce1bd74b863f445085785a03ded3bcfd.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-77aeabc586c9473d9f9acbadbec74e5b.html" target="element"> Customs Information Base </a> </td>
+																		<td> <a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element"> Exports information </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-8a483d205fe24d78b2157c918ededa0f.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8a483d205fe24d78b2157c918ededa0f.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-504fc48327fd46b5b4090b682fa82845.html" target="element"> Duties guarantee management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-11a7b810408e4f789f82a6a63e10402d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-11a7b810408e4f789f82a6a63e10402d.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-025c7c5656b648549482b90ff883d04c.html" target="element"> Determination of the economic value of goods declared for importation </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-5df7b9015a5548128f1a1808a3b89b69.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5df7b9015a5548128f1a1808a3b89b69.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-9b4c08eb72cd4ba2ac5b21bd327c8295.html" target="element"> Risk analysis </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0253d5828a7b4afc8afe6b18775e30b7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0253d5828a7b4afc8afe6b18775e30b7.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-e91a0ac9d844442a9f963e3fb67137c7.html" target="element"> Computerised Transit </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-7105c7e0796f4a70b5056dade491c6d5.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7105c7e0796f4a70b5056dade491c6d5.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-96bfffdadeb946efa83580de0c306d57.html" target="element"> EU Customs Trader Portal </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-a2257d70aa9b405f91ae6cbba53a9f43.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a2257d70aa9b405f91ae6cbba53a9f43.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-6865071ff14e4f1a95938d8548801c98.html" target="element"> Notification of Arrival, Presentation Notification and Temporary Storage </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-f0074550cc154598b6cdb6fd85b9cfb5.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f0074550cc154598b6cdb6fd85b9cfb5.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-1812edebda0b46c18c7013af1a0fa0d6.html" target="element"> Origin Registry management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-5e9841eb4e7548a08dfd337dcb54de2c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5e9841eb4e7548a08dfd337dcb54de2c.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-0f676605dccb453ea7f52afbcaaf0ebf.html" target="element"> Partner authorization </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-8941472eeddd42d6b3560ff3d5e38d34.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8941472eeddd42d6b3560ff3d5e38d34.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-23068f654a064b51a39e4a97120ccf1d.html" target="element"> Intra-EU purchases and sales </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-d545368454834fd1996814a037cf3f9c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d545368454834fd1996814a037cf3f9c.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-9c4205d6138743c1a014111e1d9a8517.html" target="element"> Tariff Registry management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-17b93f3e33b8490c8db039a10da91b8d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-17b93f3e33b8490c8db039a10da91b8d.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-8d70e48c3f164ba3bf3b37087521a13e.html" target="element"> Procedures registry management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-f0d727afefa2417da88949abc81ea949.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f0d727afefa2417da88949abc81ea949.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-e9fd289634814f3ba097f77c5234d5cd.html" target="element"> Duties calculation and payment </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-6889d5fcbf2f405a9156209473e1c9cc.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6889d5fcbf2f405a9156209473e1c9cc.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-c9ecf0ee757a4996aae19eaa0e244a03.html" target="element"> Goods flow analysis and simulations </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-34610c1f12054907a9e81b3e37308f22.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-34610c1f12054907a9e81b3e37308f22.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-b8fa304605fc4f04938402fb5db4f0b2.html" target="element"> Classification of goods </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-7898ded0221b4026b4cc89bbc651db51.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7898ded0221b4026b4cc89bbc651db51.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-a040b0b2f74b4d54bf439baf221418c2.html" target="element"> Customs organizational structure management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-17caf260530f487da4008e919d9921e1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-17caf260530f487da4008e919d9921e1.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-67cdc8cd31a14912a38f1631967d2329.html" target="element"> EU Customs information exchange </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-4e7bb63a37f94c41b7e08a6d395d2b17.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-4e7bb63a37f94c41b7e08a6d395d2b17.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-486c96dfe9f6491da8af0b21dd2bfc02.html" target="element"> Economic Operator management and accreditation </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-b38974b13e734058b00c13df0c6062ef.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b38974b13e734058b00c13df0c6062ef.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-c5a3ed2428564c609489e1b10610cae9.html" target="element"> Customs declarations </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-c533a834ae5c4d7980729cc22d4c8a0a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c533a834ae5c4d7980729cc22d4c8a0a.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-7c79f5f5f81045838a943d5d9efcfc13.html" target="element"> Applications and Requests </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-eac9df0a861b4a0ea42f2e1b80094294.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-eac9df0a861b4a0ea42f2e1b80094294.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-965dbb095c9f445e8f57bdb6804898b4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-965dbb095c9f445e8f57bdb6804898b4.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-ba24daac00c246eaad6a9e9caaeac96e.html" target="element"> Customs Decisions system </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-a2ba45912788437e9905a7afe3588618.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a2ba45912788437e9905a7afe3588618.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-58359e31c8eb4b9cb20e7543bb20471d.html" target="element"> Compliance verification management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-563d9768e44747458e65d0de07f8fb34.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-563d9768e44747458e65d0de07f8fb34.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-da9a1b04d3bf44ed84052b5bc9dc1397.html" target="element"> Preservation of cargo control </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0cea8b3bd9714e8289c7f9fc477fb41d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0cea8b3bd9714e8289c7f9fc477fb41d.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-245b1f8bbaf343a09ad6f8d1ccb5975f.html" target="element"> Procedure Automation System </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-b51763e1d52f40fd84a5280acf11c2f1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b51763e1d52f40fd84a5280acf11c2f1.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-f76624b4b48944089597e91008551a98.html" target="element"> Economic Operators Registry management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-af3c6d80fa9e41bfae87d4b878eb8c54.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-af3c6d80fa9e41bfae87d4b878eb8c54.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-db170076bbe147348f0c4f145d2edeb3.html" target="element"> Internal Customs logistics management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-48ea7407ac044b078f5056daff1bc913.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-48ea7407ac044b078f5056daff1bc913.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-bf604b74bb5148d3939f3b19dd1cfb2c.html" target="element"> Centralised Clearance for Import </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-f6ba8b4a1b5642b4ae1d35294fe9bce2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f6ba8b4a1b5642b4ae1d35294fe9bce2.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-0c0752d65cc5492d8e1836938b56f764.html" target="element"> Analysis Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-72270c6faeef497998a0a6d71a6033ef.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-72270c6faeef497998a0a6d71a6033ef.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-0396b2ad527e42859467f9f1fe3fb450.html" target="element"> Laboratories registry management </a> </td>
+																	</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

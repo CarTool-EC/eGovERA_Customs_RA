@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>SV-Customs Data Models [Motivation]</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>SV-Customs Data Models [Motivation]</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-ec104a003efb4a98a88b309775abcb6d.png" alt="SV-Customs Data Models [Motivation]" usemap="#id-ec104a003efb4a98a88b309775abcb6dmap"/>
+			   <map name="id-ec104a003efb4a98a88b309775abcb6dmap">
+				  		<area shape="rect" coords="10,319,210,399" href="../elements/id-9fec22e6672747689750437eaa82680e.html"  target="element">
+				  				<area shape="rect" coords="538,258,686,331" href="../elements/id-8470f47d0cf143b0ae43497157bba601.html"  target="element">
+				  				<area shape="rect" coords="538,366,686,439" href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html"  target="element">
+
+				  		<area shape="rect" coords="358,222,849,464" href="../elements/id-8305897e9ee2451ebaea8b8296a9e02e.html"  target="element">
+				  				<area shape="rect" coords="1234,216,1414,276" href="../elements/id-3d0bc5781d9343f4b9bc73a36eb5d8ed.html"  target="element">
+				  				<area shape="rect" coords="1042,216,1222,276" href="../elements/id-0c7f1564065343b08792b7954cf40a27.html"  target="element">
+				  				<area shape="rect" coords="1042,288,1222,348" href="../elements/id-70d147abd538471181e6d88642c24fa2.html"  target="element">
+				  				<area shape="rect" coords="1042,360,1222,420" href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html"  target="element">
+				  				<area shape="rect" coords="1234,360,1414,420" href="../elements/id-79d7b128bb2f43e1b7d0c8602eea04cb.html"  target="element">
+				  				<area shape="rect" coords="1234,288,1414,348" href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html"  target="element">
+				  				<area shape="rect" coords="1042,139,1222,199" href="../elements/id-63b5b9709fc74770b77cdae978d1448b.html"  target="element">
+				  				<area shape="rect" coords="1234,139,1414,199" href="../elements/id-a9cd369adf29473e89b049446cb41123.html"  target="element">
+				  				<area shape="rect" coords="1042,427,1222,487" href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html"  target="element">
+				  				<area shape="rect" coords="1234,427,1414,487" href="../elements/id-d2951b2ed4154da98391d21d98a2ebd8.html"  target="element">
+
+				          <area shape="rect" coords="1018,79,1462,535" href="../objects/id-8981e4a71d1941ee9155893d7d188745.html" target="element" >
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">NARRATIVE:
+The SV-Customs Data Models [Motivation] view extends Semantic view and provides a comprehensive framework for leveraging the customs data models. This view is composed of three main elements: the "Customs Information Base", the "Customs Data model", and the "Data Model".
+
+The "Customs Information Base" is a Diagram Model-group ABB that encapsulates various Business Object ABBs. These include "Workforce information", "Origin of goods Information", "Internal logistic Information", "Special Procedures Information", "Economic value Information", "Customs partners Information", "Exports information", "Imports information", "Free circulation requirement information", and "Laboratories information". Each of these business objects represents a specific type of information that is crucial for customs operations.
+
+The "Customs Data model" is a Grouping ABB that contains two Data Object SBBs: the "EU Customs Data Model" and the "WCO Data Model". The "EU Customs Data Model" is a standardized framework developed by the European Union for harmonizing and structuring data exchange in customs operations. It promotes data consistency, simplifies data integration, and supports the automation of customs procedures within the EU customs environment. On the other hand, the "WCO Data Model" has been the data foundation for global trade interoperability for over two decades. It provides a universal language for cross-border data exchange, enabling the implementation of Single Window systems and fueling Data Analytics.
+
+Lastly, the "Data Model" is a Data Object ABB that aims to be a collection of entities, their properties, and the relationships among them. It focuses on formally representing a domain, a concept, or a real-world thing.
+
+The motivation behind this view is to provide a comprehensive and structured framework for managing and leveraging customs data. By standardizing and harmonizing the data models, it facilitates interoperability between different customs systems and stakeholders, promotes data consistency, simplifies data integration, and supports the automation of customs procedures. This ultimately leads to reduced costs and improved efficiencies for customs operations.
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+									        <tr>
+									           <td> <a href="../objects/id-8981e4a71d1941ee9155893d7d188745.html" target="element"> Customs Information Base </a> </td>
+									           <td> <a href="../objects/id-8981e4a71d1941ee9155893d7d188745.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d2951b2ed4154da98391d21d98a2ebd8.html" target="element"> Workforce information </a> </td>
+													    <td> <a href="../elements/id-d2951b2ed4154da98391d21d98a2ebd8.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element"> Origin of goods Information </a> </td>
+													    <td> <a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-a9cd369adf29473e89b049446cb41123.html" target="element"> Internal logistic Information </a> </td>
+													    <td> <a href="../elements/id-a9cd369adf29473e89b049446cb41123.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-63b5b9709fc74770b77cdae978d1448b.html" target="element"> Special Procedures Information </a> </td>
+													    <td> <a href="../elements/id-63b5b9709fc74770b77cdae978d1448b.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element"> Economic value Information </a> </td>
+													    <td> <a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-79d7b128bb2f43e1b7d0c8602eea04cb.html" target="element"> Customs partners Information </a> </td>
+													    <td> <a href="../elements/id-79d7b128bb2f43e1b7d0c8602eea04cb.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element"> Exports information </a> </td>
+													    <td> <a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element"> Imports information </a> </td>
+													    <td> <a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-0c7f1564065343b08792b7954cf40a27.html" target="element"> Free circulation requirement information </a> </td>
+													    <td> <a href="../elements/id-0c7f1564065343b08792b7954cf40a27.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3d0bc5781d9343f4b9bc73a36eb5d8ed.html" target="element"> Laboratories information </a> </td>
+													    <td> <a href="../elements/id-3d0bc5781d9343f4b9bc73a36eb5d8ed.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-8305897e9ee2451ebaea8b8296a9e02e.html" target="element"> Customs Data model </a> </td>
+											    <td> <a href="../elements/id-8305897e9ee2451ebaea8b8296a9e02e.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+													    <td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+													    <td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-9fec22e6672747689750437eaa82680e.html" target="element"> Data Model </a> </td>
+											    <td> <a href="../elements/id-9fec22e6672747689750437eaa82680e.html" target="element" class="i18n-elementtype-DataObject">
+											    </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											
+																	<tr>
+																		<td> <a href="../elements/id-8e7e2c1951e64da2838ad0a579e2c17e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8e7e2c1951e64da2838ad0a579e2c17e.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-8305897e9ee2451ebaea8b8296a9e02e.html" target="element"> Customs Data model </a> </td>
+																		<td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-4317686663a8454195fc12bc042056ec.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-4317686663a8454195fc12bc042056ec.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-8305897e9ee2451ebaea8b8296a9e02e.html" target="element"> Customs Data model </a> </td>
+																		<td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-44adac1db4b3401b904fdff34fd029d2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-44adac1db4b3401b904fdff34fd029d2.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-8305897e9ee2451ebaea8b8296a9e02e.html" target="element"> Customs Data model </a> </td>
+																		<td> <a href="../elements/id-9fec22e6672747689750437eaa82680e.html" target="element"> Data Model </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-5db682da2f2248a1a19addac4798ea7e.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-5db682da2f2248a1a19addac4798ea7e.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+																				<td> <a href="../elements/id-63b5b9709fc74770b77cdae978d1448b.html" target="element"> Special Procedures Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-7f2e3b3dffba4873ba1e4a72179e97fc.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-7f2e3b3dffba4873ba1e4a72179e97fc.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+																				<td> <a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element"> Imports information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-6e2e8e9f3c2d4062ab3f2902a2273293.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-6e2e8e9f3c2d4062ab3f2902a2273293.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+																				<td> <a href="../elements/id-0c7f1564065343b08792b7954cf40a27.html" target="element"> Free circulation requirement information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-0fc9b65921d64096a3c89ea3df2c74e5.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-0fc9b65921d64096a3c89ea3df2c74e5.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+																				<td> <a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element"> Exports information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-30b391ab85fd48eaab7537547192aaa3.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-30b391ab85fd48eaab7537547192aaa3.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+																				<td> <a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element"> Origin of goods Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-2feb111b412b4c398999df3ebdef7dfa.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-2feb111b412b4c398999df3ebdef7dfa.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+																				<td> <a href="../elements/id-d2951b2ed4154da98391d21d98a2ebd8.html" target="element"> Workforce information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-e4aa27a994a148b5a10f2a1aa0e08c72.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-e4aa27a994a148b5a10f2a1aa0e08c72.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+																				<td> <a href="../elements/id-79d7b128bb2f43e1b7d0c8602eea04cb.html" target="element"> Customs partners Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-ff1efa95dd604e1bab145ccbdd5c2911.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-ff1efa95dd604e1bab145ccbdd5c2911.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+																				<td> <a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element"> Economic value Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-98a52a675f1840eba9e10a985dd512c5.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-98a52a675f1840eba9e10a985dd512c5.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+																				<td> <a href="../elements/id-3d0bc5781d9343f4b9bc73a36eb5d8ed.html" target="element"> Laboratories information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-5655d8ecee9d478a9d6ea24cdc0458bb.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-5655d8ecee9d478a9d6ea24cdc0458bb.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-eedf418a998b4ac3b1e2bfce4afdf60e.html" target="element"> EU Customs Data Model </a> </td>
+																				<td> <a href="../elements/id-a9cd369adf29473e89b049446cb41123.html" target="element"> Internal logistic Information </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-495eb352d73245d282f50924cf8a02ce.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-495eb352d73245d282f50924cf8a02ce.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+																				<td> <a href="../elements/id-63b5b9709fc74770b77cdae978d1448b.html" target="element"> Special Procedures Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-53a90737104d4695b8ed37e8e0f752dc.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-53a90737104d4695b8ed37e8e0f752dc.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+																				<td> <a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element"> Imports information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-32430e9582e84ffba166ba3af08ea122.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-32430e9582e84ffba166ba3af08ea122.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+																				<td> <a href="../elements/id-0c7f1564065343b08792b7954cf40a27.html" target="element"> Free circulation requirement information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-f70872be474c451dbcf4ab803e0d8924.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-f70872be474c451dbcf4ab803e0d8924.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+																				<td> <a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element"> Exports information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-67cf89212519422db8b989d5f60755bf.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-67cf89212519422db8b989d5f60755bf.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+																				<td> <a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element"> Origin of goods Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-3dfceaf546004ea190a42a8f896c86ed.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-3dfceaf546004ea190a42a8f896c86ed.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+																				<td> <a href="../elements/id-d2951b2ed4154da98391d21d98a2ebd8.html" target="element"> Workforce information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-0c26ba05ac524160b2f30d122ce0f2dc.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-0c26ba05ac524160b2f30d122ce0f2dc.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+																				<td> <a href="../elements/id-79d7b128bb2f43e1b7d0c8602eea04cb.html" target="element"> Customs partners Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-b8ef76bdbfcc40e29fcd6952b82b7089.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-b8ef76bdbfcc40e29fcd6952b82b7089.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+																				<td> <a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element"> Economic value Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-a2da0e2b83cc47078bec423bcabfdf9a.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-a2da0e2b83cc47078bec423bcabfdf9a.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+																				<td> <a href="../elements/id-3d0bc5781d9343f4b9bc73a36eb5d8ed.html" target="element"> Laboratories information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-a9ff007a158147349629ffa26c955a0e.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-a9ff007a158147349629ffa26c955a0e.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-8470f47d0cf143b0ae43497157bba601.html" target="element"> WCO Data Model </a> </td>
+																				<td> <a href="../elements/id-a9cd369adf29473e89b049446cb41123.html" target="element"> Internal logistic Information </a> </td>
+																			</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

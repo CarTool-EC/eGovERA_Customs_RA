@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>SV-Customs Form Structure [Motivation]</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>SV-Customs Form Structure [Motivation]</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-9670520cb46c4a53ace83ca71132c414.png" alt="SV-Customs Form Structure [Motivation]" usemap="#id-9670520cb46c4a53ace83ca71132c414map"/>
+			   <map name="id-9670520cb46c4a53ace83ca71132c414map">
+				  		<area shape="rect" coords="10,152,210,232" href="../elements/id-15e9aa9c61484f60a19595b41254a19b.html"  target="element">
+				  				<area shape="rect" coords="1174,294,1354,354" href="../elements/id-60e73edb1cf64ca1bea612e1de462467.html"  target="element">
+				  				<area shape="rect" coords="982,294,1162,354" href="../elements/id-07a2d9841a4c435490bfd0a5d1d8e862.html"  target="element">
+				  				<area shape="rect" coords="1174,222,1354,282" href="../elements/id-0c7f1564065343b08792b7954cf40a27.html"  target="element">
+				  				<area shape="rect" coords="1174,149,1354,209" href="../elements/id-3dbc0ee3241f4879a2ac86981b1aecf4.html"  target="element">
+				  				<area shape="rect" coords="1174,78,1354,138" href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html"  target="element">
+				  				<area shape="rect" coords="982,222,1162,282" href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html"  target="element">
+				  				<area shape="rect" coords="1618,149,1798,209" href="../elements/id-52d12e6242514ab38d35b918f49b55ab.html"  target="element">
+				  				<area shape="rect" coords="982,149,1162,209" href="../elements/id-70d147abd538471181e6d88642c24fa2.html"  target="element">
+				  				<area shape="rect" coords="982,78,1162,138" href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html"  target="element">
+
+				          <area shape="rect" coords="958,42,1391,381" href="../objects/id-3bc73e4c0c80464586d18e3302f48db3.html" target="element" >
+				  				<area shape="rect" coords="658,140,806,212" href="../elements/id-fc77531437bf4ece818d37cc04bb5331.html"  target="element">
+				  				<area shape="rect" coords="502,140,650,212" href="../elements/id-c7da21bcef8949829ee780501780b71c.html"  target="element">
+				  				<area shape="rect" coords="346,140,494,212" href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html"  target="element">
+
+				  		<area shape="rect" coords="334,104,825,244" href="../elements/id-2dcb69ac26d84f018066e135b6949edb.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">NARRATIVE:
+The SV-Customs Form Structure [Motivation] view extends Semantic view and provides a comprehensive framework for leveraging the structure and organization of customs forms and the information base related to customs. 
+
+The view is composed of three main elements: "Customs Forms Structure", "Customs Information Base", and "Forms Structure". 
+
+The "Customs Forms Structure" is a Grouping ABB that encompasses three Data Object SBBs: "BTI Application Form", "EUR.1 Movement Certificate", and "Single Administrative Document (SAD)". Each of these forms serves a specific purpose in the customs process, collecting and providing necessary information for customs authorities to make decisions regarding the classification, origin, and movement of goods. 
+
+The "BTI Application Form" is used to request an official binding decision from customs authorities regarding the classification of specific goods under the Harmonized System (HS). The "EUR.1 Movement Certificate" certifies the origin of goods and claims preferential treatment in international trade. The "Single Administrative Document (SAD)" is a form used for customs declarations in the EU and other countries, aiming to reduce the administrative burden and increase the standardisation and harmonisation of data collected on trade.
+
+The "Customs Information Base" is a Diagram Model-group ABB that contains nine Business Object ABBs. These objects represent various types of information related to customs, including "Origin of goods Information", "Imports information", "Classification of goods Information", "Exports information", "Economic value Information", "Combined nomenclature", "Free circulation requirement information", "Economic Operators Registration and Identification number (EORI)", and "Economic Operators Information". Each of these objects provides crucial data for the customs process, contributing to the overall efficiency and effectiveness of customs operations.
+
+The "Forms Structure" is a Data Object ABB that enables the implementation of the layout and organization of the fields, labels, and controls on a form used to collect or display data. This object plays a crucial role in ensuring the usability and functionality of the customs forms.
+
+In terms of relations, the "Customs Forms Structure" and "Customs Information Base" are related in that the forms collect and provide the information represented by the Business Object ABBs in the information base. The "Forms Structure" is related to the "Customs Forms Structure" as it defines the layout and organization of the forms. The motivation behind this view is to provide a comprehensive and structured framework for managing and leveraging customs forms and related information, thereby enhancing the efficiency and effectiveness of customs operations.
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-2dcb69ac26d84f018066e135b6949edb.html" target="element"> Customs Forms Structure </a> </td>
+											    <td> <a href="../elements/id-2dcb69ac26d84f018066e135b6949edb.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html" target="element"> BTI Application Form </a> </td>
+													    <td> <a href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-c7da21bcef8949829ee780501780b71c.html" target="element"> EUR.1 Movement certificate </a> </td>
+													    <td> <a href="../elements/id-c7da21bcef8949829ee780501780b71c.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-fc77531437bf4ece818d37cc04bb5331.html" target="element"> Single Administrative Document (SAD) </a> </td>
+													    <td> <a href="../elements/id-fc77531437bf4ece818d37cc04bb5331.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+											
+									        <tr>
+									           <td> <a href="../objects/id-3bc73e4c0c80464586d18e3302f48db3.html" target="element"> Customs Information Base </a> </td>
+									           <td> <a href="../objects/id-3bc73e4c0c80464586d18e3302f48db3.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+													<tr>
+													    <td> <a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element"> Origin of goods Information </a> </td>
+													    <td> <a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element"> Imports information </a> </td>
+													    <td> <a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-52d12e6242514ab38d35b918f49b55ab.html" target="element"> Classification of goods Information </a> </td>
+													    <td> <a href="../elements/id-52d12e6242514ab38d35b918f49b55ab.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element"> Exports information </a> </td>
+													    <td> <a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element"> Economic value Information </a> </td>
+													    <td> <a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3dbc0ee3241f4879a2ac86981b1aecf4.html" target="element"> Combined nomenclature </a> </td>
+													    <td> <a href="../elements/id-3dbc0ee3241f4879a2ac86981b1aecf4.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-0c7f1564065343b08792b7954cf40a27.html" target="element"> Free circulation requirement information </a> </td>
+													    <td> <a href="../elements/id-0c7f1564065343b08792b7954cf40a27.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-07a2d9841a4c435490bfd0a5d1d8e862.html" target="element"> Economic Operators Registration and Identification number (EORI) </a> </td>
+													    <td> <a href="../elements/id-07a2d9841a4c435490bfd0a5d1d8e862.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-60e73edb1cf64ca1bea612e1de462467.html" target="element"> Economic Operators Information </a> </td>
+													    <td> <a href="../elements/id-60e73edb1cf64ca1bea612e1de462467.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-15e9aa9c61484f60a19595b41254a19b.html" target="element"> Forms Structure </a> </td>
+											    <td> <a href="../elements/id-15e9aa9c61484f60a19595b41254a19b.html" target="element" class="i18n-elementtype-DataObject">
+											    </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-334411599a1a44de9348ca3c63f650ea.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-334411599a1a44de9348ca3c63f650ea.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-2dcb69ac26d84f018066e135b6949edb.html" target="element"> Customs Forms Structure </a> </td>
+																		<td> <a href="../elements/id-fc77531437bf4ece818d37cc04bb5331.html" target="element"> Single Administrative Document (SAD) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0ee1a02d966f4c17b3475d986b875473.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0ee1a02d966f4c17b3475d986b875473.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-2dcb69ac26d84f018066e135b6949edb.html" target="element"> Customs Forms Structure </a> </td>
+																		<td> <a href="../elements/id-c7da21bcef8949829ee780501780b71c.html" target="element"> EUR.1 Movement certificate </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-95fb718a91fe41a8a6984f0d12ffa12e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-95fb718a91fe41a8a6984f0d12ffa12e.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-2dcb69ac26d84f018066e135b6949edb.html" target="element"> Customs Forms Structure </a> </td>
+																		<td> <a href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html" target="element"> BTI Application Form </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-fd5680755dca40d09de055fb5144687d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-fd5680755dca40d09de055fb5144687d.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-2dcb69ac26d84f018066e135b6949edb.html" target="element"> Customs Forms Structure </a> </td>
+																		<td> <a href="../elements/id-15e9aa9c61484f60a19595b41254a19b.html" target="element"> Forms Structure </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-b6338aefb3ca4c7aadd76f444fc2e5a2.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-b6338aefb3ca4c7aadd76f444fc2e5a2.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html" target="element"> BTI Application Form </a> </td>
+																				<td> <a href="../elements/id-3dbc0ee3241f4879a2ac86981b1aecf4.html" target="element"> Combined nomenclature </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-2d1f5126183b4fc9a1e980333c099b74.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-2d1f5126183b4fc9a1e980333c099b74.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html" target="element"> BTI Application Form </a> </td>
+																				<td> <a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element"> Economic value Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-43df54c26aef4708a3474b7327765050.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-43df54c26aef4708a3474b7327765050.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html" target="element"> BTI Application Form </a> </td>
+																				<td> <a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element"> Origin of goods Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-825d43f4ef6f43ffba772d0c651a8b57.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-825d43f4ef6f43ffba772d0c651a8b57.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html" target="element"> BTI Application Form </a> </td>
+																				<td> <a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element"> Imports information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-a2093f33be934b8b8e0785845b7b13f2.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-a2093f33be934b8b8e0785845b7b13f2.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html" target="element"> BTI Application Form </a> </td>
+																				<td> <a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element"> Exports information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-9529c741c35d40a696f5dd69fc273008.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-9529c741c35d40a696f5dd69fc273008.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html" target="element"> BTI Application Form </a> </td>
+																				<td> <a href="../elements/id-07a2d9841a4c435490bfd0a5d1d8e862.html" target="element"> Economic Operators Registration and Identification number (EORI) </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-505ce2b1b202498baa1711cc67b8d308.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-505ce2b1b202498baa1711cc67b8d308.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html" target="element"> BTI Application Form </a> </td>
+																				<td> <a href="../elements/id-60e73edb1cf64ca1bea612e1de462467.html" target="element"> Economic Operators Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-21de3f63a7e14919a9bf9702950473ef.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-21de3f63a7e14919a9bf9702950473ef.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-40fb1846912b45af8bcfbaf64bacbe0f.html" target="element"> BTI Application Form </a> </td>
+																				<td> <a href="../elements/id-0c7f1564065343b08792b7954cf40a27.html" target="element"> Free circulation requirement information </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-3e8c66f9bd8644e5ac024640041d19f3.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-3e8c66f9bd8644e5ac024640041d19f3.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-c7da21bcef8949829ee780501780b71c.html" target="element"> EUR.1 Movement certificate </a> </td>
+																				<td> <a href="../elements/id-0c7f1564065343b08792b7954cf40a27.html" target="element"> Free circulation requirement information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-28f175d65a424bc4a11273225af8f25d.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-28f175d65a424bc4a11273225af8f25d.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-c7da21bcef8949829ee780501780b71c.html" target="element"> EUR.1 Movement certificate </a> </td>
+																				<td> <a href="../elements/id-07a2d9841a4c435490bfd0a5d1d8e862.html" target="element"> Economic Operators Registration and Identification number (EORI) </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-0f35c01a805b4c88a021a3712639b029.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-0f35c01a805b4c88a021a3712639b029.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-c7da21bcef8949829ee780501780b71c.html" target="element"> EUR.1 Movement certificate </a> </td>
+																				<td> <a href="../elements/id-60e73edb1cf64ca1bea612e1de462467.html" target="element"> Economic Operators Information </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-34bd044c79fc488fb12ee2c443a30acb.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-34bd044c79fc488fb12ee2c443a30acb.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-fc77531437bf4ece818d37cc04bb5331.html" target="element"> Single Administrative Document (SAD) </a> </td>
+																				<td> <a href="../elements/id-3dbc0ee3241f4879a2ac86981b1aecf4.html" target="element"> Combined nomenclature </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-18d50611fb4341de8668c989878ca401.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-18d50611fb4341de8668c989878ca401.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-fc77531437bf4ece818d37cc04bb5331.html" target="element"> Single Administrative Document (SAD) </a> </td>
+																				<td> <a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element"> Economic value Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-d9cecf10e8f04039809a14ef3ab7f027.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-d9cecf10e8f04039809a14ef3ab7f027.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-fc77531437bf4ece818d37cc04bb5331.html" target="element"> Single Administrative Document (SAD) </a> </td>
+																				<td> <a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element"> Origin of goods Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-e62d0f7b104a4d4d9e8668c404f79c41.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-e62d0f7b104a4d4d9e8668c404f79c41.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-fc77531437bf4ece818d37cc04bb5331.html" target="element"> Single Administrative Document (SAD) </a> </td>
+																				<td> <a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element"> Imports information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-bfa7e15e6aa64f2998cd740a52568ffc.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-bfa7e15e6aa64f2998cd740a52568ffc.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-fc77531437bf4ece818d37cc04bb5331.html" target="element"> Single Administrative Document (SAD) </a> </td>
+																				<td> <a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element"> Exports information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-c6b4afb4a1bc46f38b08db716e781c14.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-c6b4afb4a1bc46f38b08db716e781c14.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-fc77531437bf4ece818d37cc04bb5331.html" target="element"> Single Administrative Document (SAD) </a> </td>
+																				<td> <a href="../elements/id-60e73edb1cf64ca1bea612e1de462467.html" target="element"> Economic Operators Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-8588c92deec1422a97422ee327358617.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-8588c92deec1422a97422ee327358617.html" target="element" class="i18n-elementtype-RealizationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-fc77531437bf4ece818d37cc04bb5331.html" target="element"> Single Administrative Document (SAD) </a> </td>
+																				<td> <a href="../elements/id-07a2d9841a4c435490bfd0a5d1d8e862.html" target="element"> Economic Operators Registration and Identification number (EORI) </a> </td>
+																			</tr>
+
+											
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

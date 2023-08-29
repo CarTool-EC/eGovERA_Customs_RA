@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>EDIFACT</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>EDIFACT</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Representation"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Representation" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: CUSDEC is a specific format used for customs declarations. It includes fields and structures for capturing information about import or export shipments, including details about goods, their classification, valuation, origin, and other customs-related information.
+
+Publisher: Progress Software Corporation
+
+Source: https://www.stylusstudio.com/edifact/D96A/CUSDEC.htm#:~:text=This%20Customs%20Declaration%20Message%20%28CUSDEC%29%20permits%20the%20transfer,declaration%20of%20goods%20for%20import%2C%20export%20or%20transit.
+
+LOST view: SV-Customs Data Representation [Motivation]
+
+Identifier: http://data.europa.eu/dr8/egovera/EDIFACTRepresentation
+
+EIRA traceability: eira:DataRepresentation
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-21
+
+dct:identifier: http://data.europa.eu/dr8/egovera/EDIFACTRepresentation
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/EDIFACTRepresentation</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/EDIFACTRepresentation</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:DataRepresentation</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-21</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Progress Software Corporation</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">CUSDEC is a specific format used for customs declarations. It includes fields and structures for capturing information about import or export shipments, including details about goods, their classification, valuation, origin, and other customs-related information.</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap">https://www.stylusstudio.com/edifact/D96A/CUSDEC.htm#:~:text=This%20Customs%20Declaration%20Message%20%28CUSDEC%29%20permits%20the%20transfer,declaration%20of%20goods%20for%20import%2C%20export%20or%20transit.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">SV-Customs Data Representation [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">SV-Functional Architecture Principles</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

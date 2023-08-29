@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Customs Data model</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Customs Data model</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Grouping"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Grouping" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Definition: Customs Data Model is a comprehensive catalogue of elements that provides a standardized framework for harmonizing and structuring data exchange in customs operations. It includes elements such as the EU Customs Data Model (EUCDM) and the WCO Data Model (DM), both of which are designed to facilitate interoperability between different customs systems and stakeholders, promote data consistency, simplify data integration, and support the automation of customs procedures.
+
+Source: EIRA Team Research
+
+Additional information: The Customs Data Model is crucial in the global trade sector, providing a universal language for cross-border data exchange. The EUCDM, developed by the European Union, defines the structure and semantics of customs-related data elements, allowing for consistent and efficient sharing of information, such as import/export declarations, transit data, and customs processes. On the other hand, the WCO Data Model has been the data foundation for global trade interoperability for over two decades. It is a compilation of clearly structured, harmonized, standardized, and reusable sets of data definitions and electronic messages designed to meet the operational and legal requirements of Customs and other cross-border regulatory agencies (CBRAs) responsible for border management. It leverages standards established by international organizations such as the United Nations Centre for Trade Facilitation and Electronic Business (UN/CEFACT) and the International Organization of Standards (ISO) to ensure global interoperability.
+
+Example: For instance, when a company in the EU wants to export goods to another country, it would use the EUCDM to structure its export declaration data. This ensures that the data is consistent and can be easily understood by the customs authorities in the destination country. Similarly, a company in a WCO member country would use the WCO Data Model to structure its import declaration data, ensuring that it meets the requirements of the customs authorities in the importing country.
+
+LOST view: SV-Customs Data Models [Motivation]
+
+Identifier: http://data.europa.eu/dr8/egovera/CustomsDataModelGrouping
+
+ABB name: egovera:CustomsDataModelGrouping
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2023-08-20
+
+dct:identifier: http://data.europa.eu/dr8/egovera/CustomsDataModelGrouping
+
+dct:title: Customs Data Model
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/CustomsDataModelGrouping</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-20</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/CustomsDataModelGrouping</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Customs Data Model</td></tr><tr><td>dct:type</td><td class="convertlinks no-margin" style="white-space:pre-wrap">egovera:CustomsDataModelGrouping</td></tr><tr><td>skos:definition</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Customs Data Model is a comprehensive catalogue of elements that provides a standardized framework for harmonizing and structuring data exchange in customs operations. It includes elements such as the EU Customs Data Model (EUCDM) and the WCO Data Model (DM), both of which are designed to facilitate interoperability between different customs systems and stakeholders, promote data consistency, simplify data integration, and support the automation of customs procedures.</td></tr><tr><td>eira:definitionSource</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA Team Research</td></tr><tr><td>eira:definitionSourceReference</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">For instance, when a company in the EU wants to export goods to another country, it would use the EUCDM to structure its export declaration data. This ensures that the data is consistent and can be easily understood by the customs authorities in the destination country. Similarly, a company in a WCO member country would use the WCO Data Model to structure its import declaration data, ensuring that it meets the requirements of the customs authorities in the importing country.</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">The Customs Data Model is crucial in the global trade sector, providing a universal language for cross-border data exchange. The EUCDM, developed by the European Union, defines the structure and semantics of customs-related data elements, allowing for consistent and efficient sharing of information, such as import/export declarations, transit data, and customs processes. On the other hand, the WCO Data Model has been the data foundation for global trade interoperability for over two decades. It is a compilation of clearly structured, harmonized, standardized, and reusable sets of data definitions and electronic messages designed to meet the operational and legal requirements of Customs and other cross-border regulatory agencies (CBRAs) responsible for border management. It leverages standards established by international organizations such as the United Nations Centre for Trade Facilitation and Electronic Business (UN/CEFACT) and the International Organization of Standards (ISO) to ensure global interoperability.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:ArchitectureBuildingBlock</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">SV-Customs Data Models [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">SV-Functional Architecture Principles</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

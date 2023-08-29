@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Temporary storage Information</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Temporary storage Information</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-BusinessObject"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessObject" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Definition: Temporary storage information refers to data that is stored for a limited period of time and is typically used for immediate processing or backup purposes. This type of information is often stored in volatile memory, such as RAM, which retains data as long as the system is powered on but loses it when the system is turned off. Temporary storage information can include cache data, session data, or other types of non-persistent data. It plays a crucial role in enhancing system performance and efficiency by providing quick access to frequently used data. However, due to its transient nature, it requires proper management and security measures to prevent data loss or unauthorized access.
+
+Source: EIRA team
+
+Additional information: Temporary storage information refers to data that is stored for a short period of time, typically in the computer's random access memory (RAM) or in other temporary storage areas within the system. This type of storage is volatile, meaning that the information is lost when the system is shut down or restarted. 
+
+Temporary storage is often used for data that is being processed or manipulated. For example, when a program is running, it may store data in temporary storage that it needs to access quickly or frequently. This can include everything from the contents of a document that you're currently editing, to the position of the mouse cursor, to the state of a game that you're playing.
+
+Temporary storage is also used to hold data that is being transferred between different parts of the system or between different systems. For example, when you download a file from the internet, it may first be stored in temporary storage before being moved to its final location on your hard drive.
+
+In the context of data protection and privacy, temporary storage information is subject to the same regulations and requirements as any other type of data. This means that it must be handled in a way that respects the rights of the individuals to whom it relates, and that appropriate measures must be taken to protect it from unauthorized access, loss, or damage.
+
+In terms of data retention, temporary storage information is typically not kept for very long. However, the exact length of time can vary depending on the specific circumstances. For example, some data might be deleted as soon as it is no longer needed, while other data might be kept for a certain period of time to allow for system backups or for auditing purposes.
+
+Example: 1. Web Browsing: Temporary storage information is used when browsing the internet. Websites often store cookies, which are small pieces of data, on the user's computer. These cookies are used to remember information about the user, such as login information, language preferences, and items in a shopping cart. This data is temporarily stored and often deleted after a certain period of time or when the browser is closed.
+
+2. Caching: Temporary storage is also used in caching, where data is stored for quick access in the future. For example, a web browser may cache a webpage so that it loads faster the next time the user visits it. Similarly, a computer's processor may cache data from the hard drive to improve performance.
+
+3. Session Storage: In web development, session storage is a form of temporary storage that allows data to be stored for the duration of a user's session on a website. This can be used to store user input, preferences, or other data that needs to be accessed across multiple pages of a website.
+
+4. Buffering: Temporary storage is used in buffering, where data is temporarily held before it is processed. For example, when streaming a video, the data for the video is buffered before it is played. This allows the video to play smoothly without interruption.
+
+5. Temporary Files: Many software applications create temporary files while they are running. These files are used to store data that the application needs to access quickly or frequently. Once the application is closed, these temporary files are often deleted.
+
+6. RAM: The Random Access Memory (RAM) in a computer is a form of temporary storage. It holds the data that the computer is currently working with. This allows the computer to access this data quickly, improving its performance. Once the computer is turned off, the data in the RAM is lost. 
+
+7. Databases: In databases, temporary storage is used to hold data that is being processed or transferred. For example, when performing a complex query, the database may store intermediate results in temporary storage to improve performance.
+
+LOST view: OV-Customs Functional Architecture Principles
+
+Identifier: http://data.europa.eu/dr8/egovera/TemporaryStorageInformationBusinessObject
+
+EIRA traceability: eira:InformationBusinessObject
+
+ABB name: egovera:TemporaryStorageInformationBusinessObject
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2023-08-08
+
+dct:identifier: http://data.europa.eu/dr8/egovera/TemporaryStorageInformationBusinessObject
+
+dct:title: Temporary storage Information Information
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/TemporaryStorageInformationBusinessObject</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:InformationBusinessObject</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-08</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/TemporaryStorageInformationBusinessObject</td></tr><tr><td>dct:type</td><td class="convertlinks no-margin" style="white-space:pre-wrap">egovera:TemporaryStorageInformationBusinessObject</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Temporary storage Information Information</td></tr><tr><td>eira:definitionSource</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>eira:definitionSourceReference</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">1. Web Browsing: Temporary storage information is used when browsing the internet. Websites often store cookies, which are small pieces of data, on the user's computer. These cookies are used to remember information about the user, such as login information, language preferences, and items in a shopping cart. This data is temporarily stored and often deleted after a certain period of time or when the browser is closed.
+
+								2. Caching: Temporary storage is also used in caching, where data is stored for quick access in the future. For example, a web browser may cache a webpage so that it loads faster the next time the user visits it. Similarly, a computer's processor may cache data from the hard drive to improve performance.
+
+								3. Session Storage: In web development, session storage is a form of temporary storage that allows data to be stored for the duration of a user's session on a website. This can be used to store user input, preferences, or other data that needs to be accessed across multiple pages of a website.
+
+								4. Buffering: Temporary storage is used in buffering, where data is temporarily held before it is processed. For example, when streaming a video, the data for the video is buffered before it is played. This allows the video to play smoothly without interruption.
+
+								5. Temporary Files: Many software applications create temporary files while they are running. These files are used to store data that the application needs to access quickly or frequently. Once the application is closed, these temporary files are often deleted.
+
+								6. RAM: The Random Access Memory (RAM) in a computer is a form of temporary storage. It holds the data that the computer is currently working with. This allows the computer to access this data quickly, improving its performance. Once the computer is turned off, the data in the RAM is lost. 
+
+								7. Databases: In databases, temporary storage is used to hold data that is being processed or transferred. For example, when performing a complex query, the database may store intermediate results in temporary storage to improve performance.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:ArchitectureBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Temporary storage information refers to data that is stored for a short period of time, typically in the computer's random access memory (RAM) or in other temporary storage areas within the system. This type of storage is volatile, meaning that the information is lost when the system is shut down or restarted. 
+
+								Temporary storage is often used for data that is being processed or manipulated. For example, when a program is running, it may store data in temporary storage that it needs to access quickly or frequently. This can include everything from the contents of a document that you're currently editing, to the position of the mouse cursor, to the state of a game that you're playing.
+
+								Temporary storage is also used to hold data that is being transferred between different parts of the system or between different systems. For example, when you download a file from the internet, it may first be stored in temporary storage before being moved to its final location on your hard drive.
+
+								In the context of data protection and privacy, temporary storage information is subject to the same regulations and requirements as any other type of data. This means that it must be handled in a way that respects the rights of the individuals to whom it relates, and that appropriate measures must be taken to protect it from unauthorized access, loss, or damage.
+
+								In terms of data retention, temporary storage information is typically not kept for very long. However, the exact length of time can vary depending on the specific circumstances. For example, some data might be deleted as soon as it is no longer needed, while other data might be kept for a certain period of time to allow for system backups or for auditing purposes.</td></tr><tr><td>skos:definition</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Temporary storage information refers to data that is stored for a limited period of time and is typically used for immediate processing or backup purposes. This type of information is often stored in volatile memory, such as RAM, which retains data as long as the system is powered on but loses it when the system is turned off. Temporary storage information can include cache data, session data, or other types of non-persistent data. It plays a crucial role in enhancing system performance and efficiency by providing quick access to frequently used data. However, due to its transient nature, it requires proper management and security measures to prevent data loss or unauthorized access.</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Customs Functional Architecture Principles</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-MS' Customs organization management [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Customs DBCs, DPSs and Information [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Expeditions controls [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Information Base</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">SV-Customs Datasets [Motivation]</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
