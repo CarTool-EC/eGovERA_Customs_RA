@@ -40,6 +40,9 @@
                     <!-- Properties -->
                     <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
 
+                    <!-- Analysis -->
+                    	<li role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab" class="i18n-analysis"></a></li>
+
 				</ul>
 
 				<!-- Tab panes -->
@@ -82,7 +85,146 @@ dct:title: Tariff Suspensions Digital Public Service
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/TariffSuspensionsBusinessService</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:DigitalPublicBusinessService</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-08</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/TariffSuspensionsBusinessService</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Tariff Suspensions Digital Public Service</td></tr><tr><td>dct:type</td><td class="convertlinks no-margin" style="white-space:pre-wrap">egovera:TariffSuspensionsBusinessService</td></tr><tr><td>skos:definition</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Tariff Suspensions is an IT concept that refers to the temporary elimination or reduction of import duties on certain products. This is often done to encourage importation of goods that are not readily available domestically, or to provide relief for industries that rely heavily on imported goods.</td></tr><tr><td>eira:definitionSource</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Investopedia</td></tr><tr><td>eira:definitionSourceReference</td><td class="convertlinks no-margin" style="white-space:pre-wrap">https://www.investopedia.com/terms/t/tariff.asp</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">For example, a country might implement a tariff suspension on the importation of computer servers. This would make it cheaper for IT companies to import these servers, which could in turn lead to lower prices for consumers. Another example could be a tariff suspension on certain software products, which would make it more affordable for companies to purchase and use these products in their operations.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:ArchitectureBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">In the context of IT, Tariff Suspensions can be applied to the importation of certain hardware or software products. This could be beneficial for IT companies that rely on importing certain goods for their operations. For instance, if a country lacks the necessary infrastructure to produce certain IT equipment, the government might implement a tariff suspension to encourage companies to import these goods. This can help to stimulate the IT sector and promote technological advancement. It's important to note that tariff suspensions are temporary and are usually implemented for a specific period of time.</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVA-Customs Duties and Tariffs Management Enablers [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Customs Functional Architecture Principles</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Duties Calculation and payment [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-MS' Customs organization management [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Tariffs registry management [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Cooperation between Customs and Postal Operators [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Customs DBCs, DPSs and Information [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Customs cooperation [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Expeditions controls [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Digital Public Services Catalogue</td></tr>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/TariffSuspensionsBusinessService</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-11-20</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/TariffSuspensionsBusinessService</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Tariff Suspensions Digital Public Service</td></tr><tr><td>dct:type</td><td class="convertlinks no-margin" style="white-space:pre-wrap">egovera:TariffSuspensionsBusinessService</td></tr><tr><td>skos:definition</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Tariff Suspensions is an IT concept that refers to the temporary elimination or reduction of import duties on certain products. This is often done to encourage importation of goods that are not readily available domestically, or to provide relief for industries that rely heavily on imported goods.</td></tr><tr><td>eira:definitionSource</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Investopedia</td></tr><tr><td>eira:definitionSourceReference</td><td class="convertlinks no-margin" style="white-space:pre-wrap">https://www.investopedia.com/terms/t/tariff.asp</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">For example, a country might implement a tariff suspension on the importation of computer servers. This would make it cheaper for IT companies to import these servers, which could in turn lead to lower prices for consumers. Another example could be a tariff suspension on certain software products, which would make it more affordable for companies to purchase and use these products in their operations.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:ArchitectureBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">In the context of IT, Tariff Suspensions can be applied to the importation of certain hardware or software products. This could be beneficial for IT companies that rely on importing certain goods for their operations. For instance, if a country lacks the necessary infrastructure to produce certain IT equipment, the government might implement a tariff suspension to encourage companies to import these goods. This can help to stimulate the IT sector and promote technological advancement. It's important to note that tariff suspensions are temporary and are usually implemented for a specific period of time.</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVA-Customs Duties and Tariffs Management Enablers [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Customs Functional Architecture Principles</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Duties Calculation and payment [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-MS' Customs organization management [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Tariffs registry management [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Cooperation between Customs and Postal Operators [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Customs DBCs, DPSs and Information [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Customs cooperation [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Expeditions controls [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OV-Digital Public Services Catalogue</td></tr><tr><td>eira:eifLayer</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Organisational</td></tr><tr><td>eira:businessDomain</td><td class="convertlinks no-margin" style="white-space:pre-wrap">customs</td></tr><tr><td>skos:broader</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/DigitalPublicBusinessService</td></tr>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="used-in-views-id-2afdaaa4af3b4adba049191f2c62c43b">
+																	<td><a href="../views/id-2afdaaa4af3b4adba049191f2c62c43b.html" target="view" title="OV-Customs Functional Architecture Principles viewpoint"> OV-Customs Functional Architecture Principles viewpoint </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-8f0ab9ac715c4086b0d1f0078c61cb8a">
+																	<td><a href="../views/id-8f0ab9ac715c4086b0d1f0078c61cb8a.html" target="view" title="OV-Cooperation between Customs and Postal Operators [Traceability]"> OV-Cooperation between Customs and Postal Operators [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-00e0f54895044bf2a0e55aa1663955b0">
+																	<td><a href="../views/id-00e0f54895044bf2a0e55aa1663955b0.html" target="view" title="OV-Duties Calculation and payment [Traceability]"> OV-Duties Calculation and payment [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-a2302d6734a747219b0364b8c44500f2">
+																	<td><a href="../views/id-a2302d6734a747219b0364b8c44500f2.html" target="view" title="OV-Customs DBCs, DPSs and Information [Traceability]"> OV-Customs DBCs, DPSs and Information [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-fdd3845356814cc1861437ebd19f39d3">
+																	<td><a href="../views/id-fdd3845356814cc1861437ebd19f39d3.html" target="view" title="OV-Expeditions controls [Traceability]"> OV-Expeditions controls [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-4b04a7c1dc004302ae9ab1278c61c7ea">
+																	<td><a href="../views/id-4b04a7c1dc004302ae9ab1278c61c7ea.html" target="view" title="OV-Digital Public Services Catalogue"> OV-Digital Public Services Catalogue </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-63845bbcb57b44a0b4fe91df46020dde">
+																	<td><a href="../views/id-63845bbcb57b44a0b4fe91df46020dde.html" target="view" title="TVA-Customs Duties and Tariffs Management Enablers [Traceability]"> TVA-Customs Duties and Tariffs Management Enablers [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-703b370c8fd54dacadc681b6d6efe524">
+																	<td><a href="../views/id-703b370c8fd54dacadc681b6d6efe524.html" target="view" title="OV-Tariffs registry management [Traceability]"> OV-Tariffs registry management [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-e9cef74a23134142a3fe30f2475537de">
+																	<td><a href="../views/id-e9cef74a23134142a3fe30f2475537de.html" target="view" title="OV-Customs cooperation [Traceability]"> OV-Customs cooperation [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-61b5fc30f14e4c588a2e77cf77e46804">
+																	<td><a href="../views/id-61b5fc30f14e4c588a2e77cf77e46804.html" target="view" title="OV-MS' Customs organization management [Traceability]"> OV-MS' Customs organization management [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td><a href="../elements/id-10274ea9d8cc4bdeb139fa8b49df0275.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AccessRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-815fc5f7cff041d9b84be871d53ab19f.html" target="element"> Duties calculation Information</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-281c6c4cb56c49b2b09f36d177df9e79.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AccessRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-135935fbc0174b5ebe3168930e7a11f6.html" target="element"> Exports information</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-4ab964e2fff04e678ef27cf24771a052.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AccessRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-5da84e7ba4d74123867627a3d380caa8.html" target="element"> Origin of goods Information</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-862e3585dffc45ea96c5f8873af7552f.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AccessRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-d3626fbebfd2422eb477d9ea2a92072c.html" target="element"> Binding Tariffs Information</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-bf68426e48894b598b26cba9bdc0e8a2.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AccessRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-347ec17891754106b0dd7fbda7442fbe.html" target="element"> Economic value Information</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-c3844cb2bfca429ea1b724d7e30923f7.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AccessRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-70d147abd538471181e6d88642c24fa2.html" target="element"> Imports information</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-c3f7ce9bc4524307b46c61109f14b170.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AccessRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-70f860513579401580c4a263c7359668.html" target="element"> Guarantee Information</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-fab37acac54f4d87a9b36b9fc992c2ea.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AccessRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-60e73edb1cf64ca1bea612e1de462467.html" target="element"> Economic Operators Information</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-01d645b27984418d8c9b7d9ffd1da1a1.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-f962738b705e4d10b45e31f675c37c3c.html" target="element"> Cooperation between Customs and Postal Operators</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-4bd0f56f7d164762a280e3711d675d6a.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-b3236d489e63480689e4db7cdbe324cb.html" target="element"> Duties Calculation and payment</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-66099e4c5c5843c4aed92b7b0e0e4e00.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-8acd21f16c2d44359df0988e11605acb.html" target="element"> Customs cooperation</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-9faf5d81895a4f7cadb152c1982659dd.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-1627e1d8e10c44f9b619a4a647eda707.html" target="element"> Tariffs registry management</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-d0308f5186f2472e8607f40570b48d94.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-e43e970985e14049ab215527da162643.html" target="element"> Expeditions controls</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-f995f3a03be847a3aba0d285e2ded540.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+											<td><a href="../elements/id-7d596ad3ea26460193aa60d5eaf0541d.html" target="element"> MS' Customs organization management</a></td>
+										</tr>
+									<tr>
+											<td><a href="../elements/id-eac9df0a861b4a0ea42f2e1b80094294.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-7978ef38ac32448096e4b7f2fa57b12d.html" target="element"> Customs Digital Public Services Catalogue</a></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-1bb10a3669a645a58747b666b0029158.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-3e87d7dc432d409e977f305a5ef3908a.html" target="element"> Tariffs registry management</a></td>
+											<td><a href="../elements/id-b907d3c7360b42ddb2e9d75377873df4.html" target="element"> Tariff Suspensions</a></td>
+										</tr>
 							</tbody>
 						</table>
 					</div>
