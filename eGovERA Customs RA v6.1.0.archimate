@@ -88387,12 +88387,7 @@ Narrative: This viewpoint selects Architecture Building Blocks from the five dif
         </child>
       </element>
     </folder>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="[A] How to read the model" id="id-2c8055f481b44621ac333e6e31f9749e">
-      <child xsi:type="archimate:Note" id="id-32100d0092bf417b8570ea3f677c7137" font="1|Segoe UI Black|16.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI Black" fontColor="#000000" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
-        <bounds x="66" y="24" width="3247" height="133"/>
-        <feature name="gradient" value="0"/>
-        <content>HOW TO ACCESS/READ eGOVERA REFERENCE ARCHITECTURES AND MODELS BASED ON THEM</content>
-      </child>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Areas of concern per role" id="id-2c8055f481b44621ac333e6e31f9749e">
       <child xsi:type="archimate:DiagramObject" id="id-e741e6c216114e84be782aa9304ad8a5" targetConnections="id-6424a3447971455b9bd760db931000bf" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" fontColor="#000000" lineColor="#5c5c5c" archimateElement="id-8fa78c5b53514bfbaf823a4b92c880d3">
         <bounds x="66" y="420" width="1201" height="1044"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-03f910766fef4cd48620946b7ecc7301" source="id-e741e6c216114e84be782aa9304ad8a5" target="id-95076472e8b5408e806323437e4f2f43" archimateRelationship="id-2d023b4965be42b5828e8289ebeb2ee0"/>
